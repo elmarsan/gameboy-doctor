@@ -200,7 +200,7 @@ if __name__ == "__main__":
 
                         output += f"\nThe CPU state before this (at line {line_n-1}) was:"
                         output += "\n"
-                        output += "\n\t" + prev_truth
+                        output += "\n\t" + format_line(prev_truth, differing_keys, False)
                         output += "\n"
                         output += f"\nThe last operation executed (in between lines {line_n-1} and {line_n}) was:"
                         output += "\n"
